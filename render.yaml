@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: evalen-partners
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
