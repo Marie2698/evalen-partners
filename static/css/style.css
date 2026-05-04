@@ -994,3 +994,32 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 1.25rem;
   animation: fadeUp 0.8s 0.15s ease both;
 }
+
+/* ---- LANGUE SWITCHER ---- */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 1rem;
+}
+.lang-switcher span {
+  color: rgba(26,58,42,0.3);
+  font-size: 13px;
+}
+.lang-btn {
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+}
+.lang-btn:hover { color: var(--forest); }
+.lang-btn.active {
+  color: var(--forest);
+  background: rgba(196,154,43,0.15);
+}
